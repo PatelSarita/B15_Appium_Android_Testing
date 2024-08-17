@@ -17,6 +17,7 @@ public class Utils {
     public static String getText(By locator){
         return Driver.getDriver().findElement(locator).getText();
     }
+
     public static MobileElement getDigit(int digit){
         return (MobileElement) Driver.getDriver().findElement(By.id("com.google.android.calculator:id/digit_" + digit));
     }
